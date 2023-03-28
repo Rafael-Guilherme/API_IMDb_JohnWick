@@ -1,0 +1,28 @@
+@use 'variaveis';
+
+.header {
+    width: 100%;
+    height: 80px;
+    padding: 16px;
+    background-color: rgb(216, 255, 255);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo {
+        max-width: 150px;
+        width: 100%;
+        margin: 5px;
+    }
+
+    &__list {
+        display: flex;
+
+        &__links {
+            list-style: none;
+            margin-right: 8px;
+            cursor: pointer;
+        }
+    }
+}
