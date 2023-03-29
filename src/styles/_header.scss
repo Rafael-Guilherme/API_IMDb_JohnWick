@@ -23,6 +23,30 @@
             list-style: none;
             margin-right: 8px;
             cursor: pointer;
+
+            &__link {
+                text-decoration: none;
+                background-color: black;
+                padding: 8px;
+                color: azure;
+                border: none;
+                border-radius: 5px;
+
+                &:hover {
+                    background-color: variaveis.$corDoBackground;
+                    color: black;
+                }
+
+                &--is-active {
+                    background-color: azure;
+                    color: black;
+
+                    &:hover {
+                        background-color: azure;
+                        color: black;
+                    }
+                }
+            }
         }
     }
 }

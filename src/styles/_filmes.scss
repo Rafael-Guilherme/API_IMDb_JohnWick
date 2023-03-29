@@ -1,0 +1,19 @@
+.filmes {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    
+    &__list {
+        
+
+        &__image {
+            max-width: 240px;
+            width: 100%;
+            height: 320px;
+
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}
