@@ -1,0 +1,26 @@
+.classificacao {
+    padding: 16px;
+    
+    &__titulo {
+        font-size: large;
+    }
+
+    &__list {
+        &__icone {
+            font-size: 2em;
+        }
+
+        .icon--full use {
+            stroke-width: 3;
+        }
+
+        .icon--half use {
+            stroke-width: 3;
+            clip-path: inset(0 calc((100% / 2) * (2 - 1)) 0 0);
+        }
+    }
+
+    svg {
+        max-width: 24px;
+    }
+}

@@ -1,0 +1,14 @@
+.atores {
+    padding: 16px;
+
+    li {
+        list-style: none;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 24px;
+        text-align: center;
+    }
+}
