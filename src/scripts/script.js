@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-    
-//     wick4()
-//     wick1()
-//     wick2()
-//     wick3()
+
+    // wick4()
+    // wick1()
+    // wick2()
+    // wick3()
 
 })
 
@@ -73,5 +73,5 @@ function fecharModal(modalID) {
 //             imageBanner3.src = imageWick3
 //         })
 //         .catch(error => console.log(error))
-//}
+// }
 

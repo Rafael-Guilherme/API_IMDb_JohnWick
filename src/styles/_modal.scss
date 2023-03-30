@@ -10,6 +10,17 @@
     border-radius: 15px;
     z-index: 2;
 
+    @media (max-width: 1023px) {
+        width: 720px;
+        height: 720px;
+    }
+
+    @media (max-width: 767px) {
+        width: 350px;
+        height: 760px;
+        top: -800px;
+    }
+
     .fechar_modal {
         position: absolute;
         right: 0;
@@ -25,10 +36,17 @@
 
     &__conteudo {
         display: flex;
+
+        @media (max-width: 1023px) {
+            display: block
+        }
+    
+        @media (max-width: 767px) {
+            display: block;
+        }
         
         &__image {
             max-height: 360px;
-            background-color: black;
             margin-right: 16px;
             border-radius: 15px;
 
