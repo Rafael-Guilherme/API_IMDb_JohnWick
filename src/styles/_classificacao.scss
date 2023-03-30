@@ -1,13 +1,13 @@
 .classificacao {
-    padding: 16px;
-    
+    margin-top: 16px;
+
     &__titulo {
         font-size: large;
     }
 
     &__list {
-        &__icone {
-            font-size: 2em;
+        &__icon {
+            margin-top: 8px;
         }
 
         .icon--full use {

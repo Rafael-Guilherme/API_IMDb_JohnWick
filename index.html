@@ -18,106 +18,296 @@
             <li class="header__list__links">
                 <a class="header__list__links__link" href="#john_wick1">Filmes</a>
             </li>
-            <li class="header__list__links">
+            <!-- <li class="header__list__links">
                 <a class="header__list__links__link" href="#atores">Atores</a>
-            </li>
-            <li class="header__list__links">
-                <a class="header__list__links__link" href="#classificacao">Classificação</a>
-            </li>
+            </li> -->
         </ul>
     </header>
     <section class="hero">
         <img id="image-hero" class="hero__image" src="https://via.placeholder.com/1024x680" alt="John Wick">
     </section>
 
+    <div class="secao__filmes">
+        <h2>Filmes</h2>
+        <p>Clique nos pôsteres para ver mais detalhes</p>
+    </div>
+    
     <section class="filmes">
         <div class="filmes__list">
-            <img class="filmes__list__image" id="john_wick1" src="https://via.placeholder.com/320x240" alt="John Wick 1">
+            <img onclick="abrirModal('meuModal1')"
+                data-modal="meuModal1"
+                class="filmes__list__image" 
+                id="john_wick1" 
+                src="https://via.placeholder.com/320x240" alt="John Wick 1">
         </div>
         <div class="filmes__list">
-            <img class="filmes__list__image" id="john_wick2" src="https://via.placeholder.com/320x240" alt="John Wick 2">
+            <img onclick="abrirModal('meuModal2')"
+                data-modal="meuModal2" 
+                class="filmes__list__image" 
+                id="john_wick2" src="https://via.placeholder.com/320x240" alt="John Wick 2">
         </div>
         <div class="filmes__list">
-            <img class="filmes__list__image" id="john_wick3" src="https://via.placeholder.com/320x240" alt="John Wick 3">
+            <img onclick="abrirModal('meuModal3')"
+                data-modal="meuModal3" 
+                class="filmes__list__image" 
+                id="john_wick3" src="https://via.placeholder.com/320x240" alt="John Wick 3">
         </div>
         <div class="filmes__list">
-            <img class="filmes__list__image" id="john_wick4" src="https://via.placeholder.com/320x240" alt="John Wick 4">
+            <img onclick="abrirModal('meuModal4')"
+                data-modal="meuModal4" 
+                class="filmes__list__image" 
+                id="john_wick4" src="https://via.placeholder.com/320x240" alt="John Wick 4">
         </div>
     </section>
 
-    <section class="atores">
-        <h2 class="atores__titulo">Atores</h2>
-        <div class="atores__container">
-            <div class="atores__filme">
-                <h3 class="atores__filme__titulo">John wick 1</h3>
-                <ul class="atores__filme__list">
-                    <li class="atores__filme__list__item"></li>
-                    <li class="atores__filme__list__item"></li>
-                    <li class="atores__filme__list__item"></li>
-                    <li class="atores__filme__list__item"></li>
-                    <li class="atores__filme__list__item"></li>
-                </ul>
-            </div>
-    
-            <div class="atores__filme">
-                <h3 class="atores__filme__titulo">John wick 2</h3>
-                <ul class="atores__filme__list">
-                    <li class="atores__filme__list__item"></li>
-                    <li class="atores__filme__list__item"></li>
-                    <li class="atores__filme__list__item"></li>
-                    <li class="atores__filme__list__item"></li>
-                    <li class="atores__filme__list__item"></li>
-                </ul>
-            </div>
-    
-            <div class="atores__filme">
-                <h3 class="atores__filme__titulo">John wick 3</h3>
-                <ul class="atores__filme__list">
-                    <li class="atores__filme__list__item"></li>
-                    <li class="atores__filme__list__item"></li>
-                    <li class="atores__filme__list__item"></li>
-                    <li class="atores__filme__list__item"></li>
-                    <li class="atores__filme__list__item"></li>
-                </ul>
-            </div>
-    
-            <div class="atores__filme">
-                <h3 class="atores__filme__titulo">John wick 4</h3>
-                <ul class="atores__filme__list">
-                    <li class="atores__filme__list__item"></li>
-                    <li class="atores__filme__list__item"></li>
-                    <li class="atores__filme__list__item"></li>
-                    <li class="atores__filme__list__item"></li>
-                    <li class="atores__filme__list__item"></li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    <div class="fundoDark"></div>
 
-    <section class="classificacao">
-        <h2 class="classificacao__titulo">Classificação</h2>
-        <div class="classificacao__list">
-            <img src="#" alt="John Wick 1">
-            <p>Nota</p>
-            <div class="classificacao__list__icon">
-                <svg class="icon--full">
-                    <use xlink:href="./src/images/svg/star.svg#star-polygon"></use>
-                </svg>
-                <svg class="icon--full">
-                    <use xlink:href="./src/images/svg/star.svg#star-polygon"></use>
-                </svg>
-                <svg class="icon--full">
-                    <use xlink:href="./src/images/svg/star.svg#star-polygon"></use>
-                </svg>
-                <svg class="icon--full">
-                    <use xlink:href="./src/images/svg/star.svg#star-polygon"></use>
-                </svg>
-                <svg class="icon--half">
-                    <use xlink:href="./src/images/svg/star.svg#star-polygon"></use>
-                </svg>
+    <div id="meuModal1" class="modal">
+        <a>
+            <span class="fechar_modal" onclick="fecharModal('meuModal1')">&times;</span>
+        </a>
+        <div class="modal__conteudo">
+            <div class="modal__conteudo__image">
+                <img class="modal__image" src="./src/images/john_wick_1/john_wick_1.jpg" alt="John Wick 1">
+            </div>
+            <div class="modal__conteudo__conteudo">
+                <h3>Resumo:</h3>
+                <p class="modal__conteudo__conteudo__resumo">
+                    Um ex-matador sai da aposentadoria para rastrear os gangsters que mataram seu cachorro e levaram tudo dele.
+                </p>
+                <div>
+                    <h3>Principais Atores:</h3>
+                    <ul class="atores__filme__list">
+                        <li class="atores__filme__list__item">
+                            <img class="atores__image" src="./src/images/keanu_reeves.jpg" alt="ator 1">
+                            <p class="atores__nome">Keanu <br> Reeves</p>
+                        </li>
+                        <li class="atores__filme__list__item">
+                            <img class="atores__image" src="./src/images/john_wick_1/michael _nyqvist.jpg" alt="ator 1">
+                            <p class="atores__nome">Michael <br> Nyqvist</p>
+                        </li>
+                        <li class="atores__filme__list__item">
+                            <img class="atores__image" src="./src/images/john_wick_1/alfie_allen.jpg" alt="ator 1">
+                            <p class="atores__nome">Alfie <br> Allen</p>
+                        </li>
+                        <li class="atores__filme__list__item">
+                            <img class="atores__image" src="./src/images/john_wick_1/willem_dafoe.jpg" alt="ator 1">
+                            <p class="atores__nome">Willem <br> Dafoe</p>
+                        </li>
+                        <li class="atores__filme__list__item">
+                            <img class="atores__image" src="./src/images/john_wick_1/ian_mcShane.jpg" alt="ator 1">
+                            <p class="atores__nome">Ian <br> McShane</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="classificacao">
+                    <div class="classificacao__list">
+                        <h3>Classificação: 7.4</h3>
+                        <div class="classificacao__list__icon">
+                            <svg class="icon--full">
+                                <use xlink:href="./src/images/svg/star.svg#star-polygon"></use>
+                            </svg>
+                            <svg class="icon--full">
+                                <use xlink:href="./src/images/svg/star.svg#star-polygon"></use>
+                            </svg>
+                            <svg class="icon--full">
+                                <use xlink:href="./src/images/svg/star.svg#star-polygon"></use>
+                            </svg>
+                            <svg class="icon--half">
+                                <use xlink:href="./src/images/svg/star.svg#star-polygon"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+
+    <div id="meuModal2" class="modal">
+        <a>
+            <span class="fechar_modal" onclick="fecharModal('meuModal2')">&times;</span>
+        </a>
+        <div class="modal__conteudo">
+            <div class="modal__conteudo__image">
+                <img class="modal__image" src="./src/images/john_wick_2/john_wick_2.jpg" alt="John Wick 1">
+            </div>
+            <div class="modal__conteudo__conteudo">
+                <h3>Resumo:</h3>
+                <p class="modal__conteudo__conteudo__resumo">
+                    Depois de retornar ao mundo do crime para pagar uma dívida, John Wick descobre que uma grande recompensa foi colocada em sua vida.
+                </p>
+                <div>
+                    <h3>Principais Atores:</h3>
+                    <ul class="atores__filme__list">
+                        <li class="atores__filme__list__item">
+                            <img class="atores__image" src="./src/images/keanu_reeves.jpg" alt="ator 1">
+                            <p class="atores__nome">Keanu <br> Reeves</p>
+                        </li>
+                        <li class="atores__filme__list__item">
+                            <img class="atores__image" src="./src/images/john_wick_2/riccardo_scamarcio.jpg" alt="ator 1">
+                            <p class="atores__nome">Riccardo <br> Scamarcio</p>
+                        </li>
+                        <li class="atores__filme__list__item">
+                            <img class="atores__image" src="./src/images/john_wick_1/ian_mcShane.jpg" alt="ator 1">
+                            <p class="atores__nome">Ian <br> McShane</p>
+                        </li>
+                        <li class="atores__filme__list__item">
+                            <img class="atores__image" src="./src/images/john_wick_2/ruby_rose.jpg" alt="ator 1">
+                            <p class="atores__nome">Ruby <br> Rose</p>
+                        </li>
+                        <li class="atores__filme__list__item">
+                            <img class="atores__image" src="./src/images/john_wick_2/laurence_fishburne.jpg" alt="ator 1">
+                            <p class="atores__nome">Laurence <br> Fishburne</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="classificacao">
+                    <div class="classificacao__list">
+                        <h3>Classificação: 7.4</h3>
+                        <div class="classificacao__list__icon">
+                            <svg class="icon--full">
+                                <use xlink:href="./src/images/svg/star.svg#star-polygon"></use>
+                            </svg>
+                            <svg class="icon--full">
+                                <use xlink:href="./src/images/svg/star.svg#star-polygon"></use>
+                            </svg>
+                            <svg class="icon--full">
+                                <use xlink:href="./src/images/svg/star.svg#star-polygon"></use>
+                            </svg>
+                            <svg class="icon--half">
+                                <use xlink:href="./src/images/svg/star.svg#star-polygon"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="meuModal3" class="modal">
+        <a>
+            <span class="fechar_modal" onclick="fecharModal('meuModal3')">&times;</span>
+        </a>
+        <div class="modal__conteudo">
+            <div class="modal__conteudo__image">
+                <img class="modal__image" src="./src/images/john_wick_3/john_wick_3.jpg" alt="John Wick 1">
+            </div>
+            <div class="modal__conteudo__conteudo">
+                <h3>Resumo:</h3>
+                <p class="modal__conteudo__conteudo__resumo">
+                    Depois de matar um membro do grêmio dos assassinos internacionais, e com um preço por sua cabeça, o assassino John Wick está fugindo e é o alvo de homens e mulheres atingidos em todos os lugares.
+                </p>
+                <div>
+                    <h3>Principais Atores:</h3>
+                    <ul class="atores__filme__list">
+                        <li class="atores__filme__list__item">
+                            <img class="atores__image" src="./src/images/keanu_reeves.jpg" alt="ator 1">
+                            <p class="atores__nome">Keanu <br> Reeves</p>
+                        </li>
+                        <li class="atores__filme__list__item">
+                            <img class="atores__image" src="./src/images/john_wick_3/halle_berry.jpg" alt="ator 1">
+                            <p class="atores__nome">Halle <br> Berry</p>
+                        </li>
+                        <li class="atores__filme__list__item">
+                            <img class="atores__image" src="./src/images/john_wick_1/ian_mcShane.jpg" alt="ator 1">
+                            <p class="atores__nome">Ian <br> McShane</p>
+                        </li>
+                        <li class="atores__filme__list__item">
+                            <img class="atores__image" src="./src/images/john_wick_2/laurence_fishburne.jpg" alt="ator 1">
+                            <p class="atores__nome">Laurence <br> Fishburne</p>
+                        </li>
+                        <li class="atores__filme__list__item">
+                            <img class="atores__image" src="./src/images/john_wick_3/mark_dacascos.jpg" alt="ator 1">
+                            <p class="atores__nome">Mark <br> Dacascos</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="classificacao">
+                    <div class="classificacao__list">
+                        <h3>Classificação: 7.4</h3>
+                        <div class="classificacao__list__icon">
+                            <svg class="icon--full">
+                                <use xlink:href="./src/images/svg/star.svg#star-polygon"></use>
+                            </svg>
+                            <svg class="icon--full">
+                                <use xlink:href="./src/images/svg/star.svg#star-polygon"></use>
+                            </svg>
+                            <svg class="icon--full">
+                                <use xlink:href="./src/images/svg/star.svg#star-polygon"></use>
+                            </svg>
+                            <svg class="icon--half">
+                                <use xlink:href="./src/images/svg/star.svg#star-polygon"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="meuModal4" class="modal">
+        <a>
+            <span class="fechar_modal" onclick="fecharModal('meuModal4')">&times;</span>
+        </a>
+        <div class="modal__conteudo">
+            <div class="modal__conteudo__image">
+                <img class="modal__image" src="./src/images/john_wick_4/john_wick_4.jpg" alt="John Wick 4">
+            </div>
+            <div class="modal__conteudo__conteudo">
+                <h3>Resumo:</h3>
+                <p class="modal__conteudo__conteudo__resumo">
+                    Antes de recuperar sua liberdade, Wick deve enfrentar um novo inimigo com alianças poderosas em todo o mundo. Uma influência que transformará velhos amigos em inimigos.
+                </p>
+                <div>
+                    <h3>Principais Atores:</h3>
+                    <ul class="atores__filme__list">
+                        <li class="atores__filme__list__item">
+                            <img class="atores__image" src="./src/images/keanu_reeves.jpg" alt="ator 1">
+                            <p class="atores__nome">Keanu <br> Reeves</p>
+                        </li>
+                        <li class="atores__filme__list__item">
+                            <img class="atores__image" src="./src/images/john_wick_4/george_georgiou.jpg" alt="ator 1">
+                            <p class="atores__nome">George <br> Georgiou</p>
+                        </li>
+                        <li class="atores__filme__list__item">
+                            <img class="atores__image" src="./src/images/john_wick_4/lance_reddick.jpg" alt="ator 1">
+                            <p class="atores__nome">Lance <br> Reddick</p>
+                        </li>
+                        <li class="atores__filme__list__item">
+                            <img class="atores__image" src="./src/images/john_wick_4/donnie_yen.jpg" alt="ator 1">
+                            <p class="atores__nome">Donnie <br> Yen</p>
+                        </li>
+                        <li class="atores__filme__list__item">
+                            <img class="atores__image" src="./src/images/john_wick_2/laurence_fishburne.jpg" alt="ator 1">
+                            <p class="atores__nome">Laurence <br> Fishburne</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="classificacao">
+                    <div class="classificacao__list">
+                        <h3>Classificação: 8.4</h3>
+                        <div class="classificacao__list__icon">
+                            <svg class="icon--full">
+                                <use xlink:href="./src/images/svg/star.svg#star-polygon"></use>
+                            </svg>
+                            <svg class="icon--full">
+                                <use xlink:href="./src/images/svg/star.svg#star-polygon"></use>
+                            </svg>
+                            <svg class="icon--full">
+                                <use xlink:href="./src/images/svg/star.svg#star-polygon"></use>
+                            </svg>
+                            <svg class="icon--full">
+                                <use xlink:href="./src/images/svg/star.svg#star-polygon"></use>
+                            </svg>
+                            <svg class="icon--half">
+                                <use xlink:href="./src/images/svg/star.svg#star-polygon"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <h1>

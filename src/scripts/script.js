@@ -4,9 +4,25 @@ document.addEventListener('DOMContentLoaded', function() {
 //     wick1()
 //     wick2()
 //     wick3()
-    
-    
+
 })
+
+function abrirModal(modalID) {
+    // seleciona o elemento do modal
+    let modal = document.getElementById(modalID);
+    let fundoDark = document.querySelector('.fundoDark')
+    // exibe o modal
+    modal.style.display = "block";
+    fundoDark.style.display = "block";
+  }
+
+function fecharModal(modalID) {
+    let modal = document.getElementById(modalID);
+    let fundoDark = document.querySelector('.fundoDark')
+
+    modal.style.display = "none";
+    fundoDark.style.display = "none";
+}
 
 // //Banner do Hero
 // function wick4() {

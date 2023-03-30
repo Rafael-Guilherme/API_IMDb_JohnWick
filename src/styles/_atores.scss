@@ -12,3 +12,26 @@
         text-align: center;
     }
 }
+
+.atores__filme__list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8px;
+
+    &__item {
+        list-style: none;
+
+        img {
+            width: 64px;
+            height: 96px;
+        }
+
+        .atores__image {
+            border-radius: 50%;
+        }
+
+        .atores__nome {
+            text-align: center;
+        }
+    }
+}

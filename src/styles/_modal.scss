@@ -1,0 +1,62 @@
+.modal {
+    display: none;
+    background-color: rgb(141, 141, 141);
+    margin: 0 auto;
+    width: 720px;
+    height: 380px;
+    position: relative;
+    top: -320px;
+    padding: 8px;
+    border-radius: 15px;
+    z-index: 2;
+
+    .fechar_modal {
+        position: absolute;
+        right: 0;
+        margin-right: 8px;
+        font-size: x-large;
+        font-weight: 900;
+        cursor: pointer;
+    }
+
+    .modal__image {
+        border-radius: 15px;
+    }
+
+    &__conteudo {
+        display: flex;
+        
+        &__image {
+            max-height: 360px;
+            background-color: black;
+            margin-right: 16px;
+            border-radius: 15px;
+
+            img {
+                width: 240px;
+                height: 360px;
+            }
+        }
+
+        &__conteudo {
+            margin-top: 16px;
+            max-height: 340px;
+
+            &__resumo {
+                margin: 8px 0 16px;
+            }
+        }
+    }
+}
+
+.fundoDark {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 1;
+}
